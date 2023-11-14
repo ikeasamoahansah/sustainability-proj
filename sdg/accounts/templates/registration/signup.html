@@ -1,0 +1,6 @@
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {% comment %} <input type="hidden" name="user_type" value="individual"> {% endcomment %}
+    <button type="submit">Register as Individual</button>
+</form>
